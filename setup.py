@@ -1,14 +1,23 @@
+from os import path
 from setuptools import setup, find_packages
 
+
+here = path.abspath(path.dirname(__file__))
+
+
+with open(path.join(here, 'VERSION')) as f:
+    VERSION = f.read().strip()
+
+
 setup(
-    name='wkhtmltopdf',
-    version='master',
-    description='Simple python wrapper for wkhtmltopdf',
-    long_description="%s\n\n%s" % (open('README.rst', 'r').read(), open('AUTHORS.rst', 'r').read()),
-    author='Qoda',
-    author_email='jpbydendyk@gmail.com',
+    name='py3-wkhtmltopdf',
+    version=VERSION,
+    description='Simple Python 3 wrapper for wkhtmltopdf',
+    long_description="%s\n\n%s" % (open('README.md', 'r').read(), open('AUTHORS.md', 'r').read()),
+    author='Jonathan Tsai',
+    author_email='hello@jontsai.com',
     license='BSD',
-    url='http://github.com/qoda/python-wkhtmltopdf',
+    url='http://github.com/jontsai/python3-wkhtmltopdf',
     packages=find_packages(),
     dependency_links=[],
     install_requires=[],

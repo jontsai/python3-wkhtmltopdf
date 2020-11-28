@@ -1,9 +1,11 @@
 #!/usr/bin/env python
-import os
+# Python Standard Library Imports
 import optparse
-
-from subprocess import Popen
-from subprocess import PIPE
+import os
+from subprocess import (
+    PIPE,
+    Popen,
+)
 
 
 class WKOption(object):
@@ -153,7 +155,7 @@ class WKHtmlToPdf(object):
             else:
                 raise Exception(stderr)
 
-        except OSError, exc:
+        except OSError as exc:
             raise exc
 
 

@@ -1,10 +1,8 @@
-NO LONGER MAINTAINED
-====================
-
-
-
 python-wkhtmltopdf
 ==================
+
+**NOTE**: This has been FORKED FROM https://github.com/qoda/python-wkhtmltopdf because the Python package (https://pypi.org/project/wkhtmltopdf/) is no longer maintained, but there are still those in the community who need to use this for production projects in Python 3.
+
 A simple python wrapper for the wkhtmltopdf lib (https://github.com/wkhtmltopdf/wkhtmltopdf)
 
 Requirements
@@ -16,7 +14,7 @@ System:
 - Linux 32/64 or OSX only (Windows is not supported at this stage)
 - Xvfd
 - wkhtmltopdf
-- python 2.5+
+- python 3+
 
 Installation
 ------------
@@ -48,18 +46,18 @@ python-wkhtmltopdf (Any Platform)
 
 1. Development::
 
-    $ git clone git@github.com:qoda/python-wkhtmltopdf.git
-    $ cd python-wkhtmltopdf
+    $ git clone git@github.com:jontsai/python3-wkhtmltopdf.git
+    $ cd python3-wkhtmltopdf
     $ virtualenv .
     $ pip install -r requirements.pip
 
 2. PIP::
 
-    $ pip install git+https://github.com/qoda/python-wkhtmltopdf.git
+    $ pip install git+https://github.com/jontsai/python3-wkhtmltopdf.git
 
     or from pypi
 
-    $ pip install python-wkhtmltopdf
+    $ pip install python3-wkhtmltopdf
 
 Usage
 -----
@@ -114,5 +112,3 @@ Optional Arguments:
 - **margin-left** (default: 10)
 - **margin-right** (default: 10)
 - **disable-smart-shrinking** (default: False)
-
-
